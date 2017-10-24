@@ -156,7 +156,7 @@ static int vlc_plugin_setter (void *plugin, void *tgt, int propid, ...)
     va_list ap;
     int ret = 0;
 
-    va_start (ap, propid);
+    va_start (ap, propid);  // 以propid为起点确定变参的内存起始地址
     switch (propid)
     {
         case VLC_MODULE_CREATE:
